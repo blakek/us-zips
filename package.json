@@ -2,11 +2,20 @@
   "name": "us-zips",
   "version": "1.0.0",
   "description": "A list of US ZIP codes and their geolocations",
-  "main": "us-zips.js",
+  "main": "index.js",
   "repository": {
     "url": "https://github.com/blakek/us-zips.git",
     "type": "git"
   },
   "author": "Blake Knight <oss.ideas@gmail.com> (http://blakek.me/)",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "make:array": "node scripts/make-array.js",
+    "make:key-value": "node scripts/make-key-value.js",
+    "make:map": "node scripts/make-map.js",
+    "test": "ava"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2"
+  }
 }
