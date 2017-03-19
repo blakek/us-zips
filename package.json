@@ -10,6 +10,10 @@
   "author": "Blake Knight <oss.ideas@gmail.com> (http://blakek.me/)",
   "license": "MIT",
   "scripts": {
-    "make:array": "node scripts/make-array.js"
+    "make:array": "node scripts/make-array.js",
+    "test": "ava"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2"
   }
 }
