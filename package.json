@@ -11,6 +11,7 @@
   "license": "MIT",
   "scripts": {
     "make:array": "node scripts/make-array.js",
+    "make:map": "node scripts/make-map.js",
     "test": "ava"
   },
   "devDependencies": {
