@@ -11,6 +11,7 @@
   "license": "MIT",
   "scripts": {
     "make:array": "node scripts/make-array.js",
+    "make:key-value": "node scripts/make-key-value.js",
     "make:map": "node scripts/make-map.js",
     "test": "ava"
   },
