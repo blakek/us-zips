@@ -8,5 +8,8 @@
     "type": "git"
   },
   "author": "Blake Knight <oss.ideas@gmail.com> (http://blakek.me/)",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "make:array": "node scripts/make-array.js"
+  }
 }
