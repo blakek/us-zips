@@ -2,7 +2,7 @@
   "name": "us-zips",
   "version": "1.0.0",
   "description": "A list of US ZIP codes and their geolocations",
-  "main": "us-zips.js",
+  "main": "index.js",
   "repository": {
     "url": "https://github.com/blakek/us-zips.git",
     "type": "git"
