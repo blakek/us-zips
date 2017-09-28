@@ -8,7 +8,7 @@ I needed a list of ZIP codes, and the [US Census Bureau](http://www.census.gov/g
 
 Example: get the nearest zip to a geolocation
 
-```js
+```javascript
 const geolib = require('geolib')
 const usZips = require('us-zips')
 
@@ -28,7 +28,7 @@ If you want to get the nearest ZIP, see if [`geo2zip`](https://github.com/blakek
 
 The default export returns an object.  The object's keys are each ZIP code and values are objects with latitude and longitude properties.
 
-```js
+```javascript
 const usZips = require('us-zips')
 
 console.log(usZips['54301'])
@@ -45,7 +45,7 @@ console.log(usZips['54301'])
 
 ### Array
 
-```js
+```javascript
 const usZips = require('us-zips/array')
 
 console.log(usZips.find(zip => zip.zipCode === '37214'))
@@ -65,7 +65,7 @@ console.log(usZips.find(zip => zip.zipCode === '37214'))
 
 ### Key/value
 
-```js
+```javascript
 const usZips = require('us-zips/key-value')
 
 console.log(usZips.find(([key, value]) => key === '10001'))
@@ -84,7 +84,7 @@ console.log(usZips.find(([key, value]) => key === '10001'))
 
 ### Map
 
-```js
+```javascript
 const usZips = require('us-zips/map')
 
 console.log(usZips.get('90210'))
