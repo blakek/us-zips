@@ -7,7 +7,19 @@
     "url": "https://github.com/blakek/us-zips.git",
     "type": "git"
   },
-  "author": "Blake Knight <oss.ideas@gmail.com> (http://blakek.me/)",
+  "author": "Blake Knight <oss.ideas@gmail.com> (https://blakek.me/)",
+  "contributors": [
+    "Blake Knight <oss.ideas@gmail.com> (https://blakek.me/)"
+  ],
+  "engines": {
+    "node": ">=6"
+  },
+  "keywords": [
+    "zip",
+    "zipcode",
+    "postal",
+    "code"
+  ],
   "license": "MIT",
   "scripts": {
     "make:array": "node scripts/make-array.js",
@@ -15,6 +27,7 @@
     "make:map": "node scripts/make-map.js",
     "test": "ava"
   },
+  "dependencies": {},
   "devDependencies": {
     "ava": "^0.25.0"
   }
