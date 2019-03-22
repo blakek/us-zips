@@ -2,7 +2,7 @@
 
 > A list of US ZIP codes and their geolocations
 
-I needed a list of ZIP codes, and the [US Census Bureau](http://www.census.gov/geo/maps-data/data/gazetteer2015.html) had one.
+I needed a list of ZIP codes, and the [US Census Bureau had one][1].
 
 ## Usage
 
@@ -17,16 +17,18 @@ const somewhere = {
   lng: -88.4321
 }
 
-geolib.findNearest(somewhere, usZips)  // { distance: 12834, key: '39341' }
+geolib.findNearest(somewhere, usZips) // { distance: 12834, key: '39341' }
 ```
 
-If you want to get the nearest ZIP, see if [`geo2zip`](https://github.com/blakek/geo2zip) fits your needs.
+If you want to get the nearest ZIP, see if
+[`geo2zip`][2] fits your needs.
 
 ## Data Formats
 
 ### Default (Object)
 
-The default export returns an object.  The object's keys are each ZIP code and values are objects with latitude and longitude properties.
+The default export returns an object. The object's keys are each ZIP code and
+values are objects with latitude and longitude properties.
 
 ```javascript
 const usZips = require('us-zips')
@@ -93,7 +95,8 @@ console.log(usZips.get('90210'))
 
 ## Install
 
-With [Yarn](https://yarnpkg.com/en/) or [npm](https://npmjs.org/) installed, run:
+With [Yarn](https://yarnpkg.com/en/) or [npm](https://npmjs.org/) installed,
+run:
 
 ```shell
 yarn add us-zips
@@ -104,14 +107,22 @@ npm install us-zips
 
 ## Acknowledgments
 
-Data for ZIP codes and their geolocations was generated from [this file](http://www2.census.gov/geo/docs/maps-data/data/gazetteer/2015_Gazetteer/2015_Gaz_zcta_national.zip), which can be downloaded from the [US Census Bureau map data page](http://www.census.gov/geo/maps-data/data/gazetteer2015.html).
+Data for ZIP codes and their geolocations was generated from [this file][1],
+which can be downloaded from the [US Census Bureau map data
+page][4].
 
 ## See Also
 
-- [`blakek/geo2zip`](https://github.com/blakek/geo2zip) - get the nearest zip code from a geolocation
-- [US Census Bureau - map data page](http://www.census.gov/geo/maps-data/data/gazetteer2015.html)
-- [`manuelbieh/Geolib`](https://github.com/manuelbieh/Geolib) - easily do stuff with a list of geolocations (e.g. find nearest, get within radius)
+- [`blakek/geo2zip`][2] - get the nearest zip code from a geolocation
+- [`blakek/standardize-geolocation`][3] - takes geolocations of different
+  formats and outputs a standardized version
+- [US Census Bureau - map data page][4]
 
 ## License
 
 MIT
+
+[1]: https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2018_Gazetteer/2018_Gaz_zcta_national.zip
+[2]: https://github.com/blakek/geo2zip
+[3]: https://github.com/blakek/standardize-geolocation
+[4]: https://www.census.gov/geo/maps-data/data/gazetteer2018.html
