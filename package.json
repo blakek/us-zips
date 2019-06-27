@@ -1,6 +1,6 @@
 {
   "name": "us-zips",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A list of US ZIP codes and their geolocations",
   "main": "index.js",
   "repository": {
