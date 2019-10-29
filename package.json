@@ -22,9 +22,9 @@
   ],
   "license": "MIT",
   "scripts": {
+    "import-zips": "import() { node scripts/import-zips.js \"$1\" && yarn make:array && yarn make:key-value; }; import",
     "make:array": "node scripts/make-array.js",
     "make:key-value": "node scripts/make-key-value.js",
-    "make:map": "node scripts/make-map.js",
     "test": "ava"
   },
   "dependencies": {},
