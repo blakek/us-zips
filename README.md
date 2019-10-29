@@ -9,15 +9,15 @@ I needed a list of ZIP codes, and the [US Census Bureau had one][1].
 Example: get the nearest zip to a geolocation
 
 ```javascript
-const geolib = require('geolib')
-const usZips = require('us-zips')
+const geolib = require('geolib');
+const usZips = require('us-zips');
 
 const somewhere = {
   lat: 33.1234,
   lng: -88.4321
-}
+};
 
-geolib.findNearest(somewhere, usZips) // { distance: 12834, key: '39341' }
+geolib.findNearest(somewhere, usZips); // { distance: 12834, key: '39341' }
 ```
 
 If you want to get the nearest ZIP, see if
@@ -87,9 +87,9 @@ console.log(usZips.find(([key, value]) => key === '10001'))
 ### Map
 
 ```javascript
-const usZips = require('us-zips/map')
+const usZips = require('us-zips/map');
 
-console.log(usZips.get('90210'))
+console.log(usZips.get('90210'));
 // { latitude: 34.100517, longitude: -118.41463 }
 ```
 
@@ -122,7 +122,7 @@ page][4].
 
 MIT
 
-[1]: https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2018_Gazetteer/2018_Gaz_zcta_national.zip
+[1]: https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2019_Gazetteer/2019_Gaz_zcta_national.zip
 [2]: https://github.com/blakek/geo2zip
 [3]: https://github.com/blakek/standardize-geolocation
-[4]: https://www.census.gov/geo/maps-data/data/gazetteer2018.html
+[4]: https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html
