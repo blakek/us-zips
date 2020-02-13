@@ -1,18 +1,18 @@
 #!/usr/bin/env node
-const fs = require('fs')
-const util = require('util')
+const fs = require('fs');
+const util = require('util');
 
-const args = process.argv.slice(2)
+const args = process.argv.slice(2);
 
 if (args.length !== 1) {
   console.error(
     'Expected one argument, a path to a txt file from the Census Bureau'
-  )
-  process.exit(1)
+  );
+  process.exit(1);
 }
 
-const filepath = args[0]
-const zipList = {}
+const filepath = args[0];
+const zipList = {};
 
 fs.readFileSync(filepath, { encoding: 'utf-8' })
   .replace(/^$/, '')
@@ -25,9 +25,11 @@ fs.readFileSync(filepath, { encoding: 'utf-8' })
     zipList[zipCode] = {
       latitude: parseFloat(latitude),
       longitude: parseFloat(longitude)
-    }
-  })
+    };
+  });
 
-const outputBody = `module.exports = ${util.inspect(zipList, { compact: 2 })}\n`
+const outputBody = `module.exports = ${util.inspect(zipList, {
+  compact: 2
+})}\n`;
 
-fs.writeFileSync('./object.js', outputBody)
+fs.writeFileSync('./object.js', outputBody);
