@@ -6216,6 +6216,7 @@ module.exports = {
   '28170': { latitude: 34.998714, longitude: -80.098785 },
   '28173': { latitude: 34.916155, longitude: -80.731415 },
   '28174': { latitude: 34.969035, longitude: -80.43958 },
+  '28201': { latitude: 35.229430, longitude: -80.933489 },
   '28202': { latitude: 35.227271, longitude: -80.844194 },
   '28203': { latitude: 35.208185, longitude: -80.859107 },
   '28204': { latitude: 35.21462, longitude: -80.827014 },
