@@ -122,7 +122,7 @@ page][4].
 
 MIT
 
-[1]: https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2019_Gazetteer/2019_Gaz_zcta_national.zip
+[1]: https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2020_Gazetteer/2020_Gaz_zcta_national.zip
 [2]: https://github.com/blakek/geo2zip
 [3]: https://github.com/blakek/standardize-geolocation
 [4]: https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html
