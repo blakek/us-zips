@@ -20,8 +20,8 @@ const somewhere = {
 geolib.findNearest(somewhere, usZips); // { distance: 12834, key: '39341' }
 ```
 
-If you want to get the nearest ZIP, see if
-[`geo2zip`][2] fits your needs.
+If you want to get the nearest ZIP, see if [`geo2zip`][2] fits your needs. It's
+much faster than the demo above and uses this package as a source.
 
 ## Data Formats
 
