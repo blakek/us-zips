@@ -1,17 +1,17 @@
-const test = require('ava').default;
-const zipCount = require('../zipCount');
-const zipKeyValue = require('../key-value');
+const test = require('ava').default
+const zipCount = require('../zipCount')
+const zipKeyValue = require('../key-value')
 
 test('exports the correct number of zips', t => {
-  t.is(zipKeyValue.length, zipCount);
-});
+  t.is(zipKeyValue.length, zipCount)
+})
 
 test('exports the expected format', t => {
-  t.true(Array.isArray(zipKeyValue));
+  t.true(Array.isArray(zipKeyValue))
 
-  const [zipCode, location] = zipKeyValue[0];
+  const [zipCode, location] = zipKeyValue[0]
 
-  t.truthy(zipCode);
-  t.truthy(location.latitude);
-  t.truthy(location.longitude);
-});
+  t.truthy(zipCode)
+  t.truthy(location.latitude)
+  t.truthy(location.longitude)
+})

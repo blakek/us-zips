@@ -1,4 +1,4 @@
-# us-zips
+# us-zips :us:
 
 > A list of US ZIP codes and their geolocations
 
@@ -9,19 +9,20 @@ I needed a list of ZIP codes, and the [US Census Bureau had one][1].
 Example: get the nearest zip to a geolocation
 
 ```javascript
-const geolib = require('geolib');
-const usZips = require('us-zips');
+const geolib = require('geolib')
+const usZips = require('us-zips')
 
 const somewhere = {
   lat: 33.1234,
   lng: -88.4321
-};
+}
 
-geolib.findNearest(somewhere, usZips); // { distance: 12834, key: '39341' }
+geolib.findNearest(somewhere, usZips) // { distance: 12834, key: '39341' }
 ```
 
-If you want to get the nearest ZIP, see if [`geo2zip`][2] fits your needs. It's
-much faster than the demo above and uses this package as a source.
+:information_source: If you need the nearest ZIPs for a geolocation, see if
+[`geo2zip`][2] fits your needs. It is much faster than the demo above and uses
+this package as a source.
 
 ## Data Formats
 
@@ -87,9 +88,9 @@ console.log(usZips.find(([key, value]) => key === '10001'))
 ### Map
 
 ```javascript
-const usZips = require('us-zips/map');
+const usZips = require('us-zips/map')
 
-console.log(usZips.get('90210'));
+console.log(usZips.get('90210'))
 // { latitude: 34.100517, longitude: -118.41463 }
 ```
 
@@ -122,7 +123,7 @@ page][4].
 
 MIT
 
-[1]: https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2020_Gazetteer/2020_Gaz_zcta_national.zip
+[1]: https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2021_Gazetteer/2021_Gaz_zcta_national.zip
 [2]: https://github.com/blakek/geo2zip
 [3]: https://github.com/blakek/standardize-geolocation
 [4]: https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html
