@@ -106,10 +106,6 @@ yarn add us-zips
 npm install us-zips
 ```
 
-:information_source: **NOTE:** Due to ZIP codes always changing, this package
-uses calendar versioning (aka [CalVer][5]). This means each year will have a
-separate "major" version from npm and Yarn's perspective.
-
 ## Acknowledgments
 
 Data for ZIP codes and their geolocations was generated from [this file][1],
@@ -131,4 +127,3 @@ MIT
 [2]: https://github.com/blakek/geo2zip
 [3]: https://github.com/blakek/standardize-geolocation
 [4]: https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html
-[5]: https://calver.org/
