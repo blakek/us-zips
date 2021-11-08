@@ -13,6 +13,7 @@ jobs:
           - '16'
 
     steps:
+      - name: Test using Node.js v${{matrix.node_version}}
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
