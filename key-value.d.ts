@@ -1,6 +1,7 @@
 import { Geolocation, ZIPCode } from '.'
 
-export type ZIPCodeList = [ZIPCode, Geolocation][]
+export type ZIPCodeRecord = [ZIPCode, Geolocation]
+export type ZIPCodeList = ZIPCodeRecord[]
 
 declare module 'us-zips/key-value' {
   const defaultExport: ZIPCodeList

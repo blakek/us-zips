@@ -1,8 +1,9 @@
 import { Geolocation, ZIPCode } from '.'
 
-export type ZIPCodeList = Geolocation & { zipCode: ZIPCode }
+export type ZIPCodeRecord = Geolocation & { zipCode: ZIPCode }
+export type ZIPCodeList = ZIPCodeRecord[]
 
 declare module 'us-zips/array' {
-  const defaultExport: ZIPCodeList[]
+  const defaultExport: ZIPCodeList
   export default defaultExport
 }
