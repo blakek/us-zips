@@ -5,7 +5,5 @@ export interface Geolocation {
 
 export type ZIPCode = string
 
-declare module 'us-zips' {
-  const defaultExport: import('./object').ZIPCodeList
-  export default defaultExport
-}
+declare const defaultExport: import('./object').ZIPCodeList
+export default defaultExport
