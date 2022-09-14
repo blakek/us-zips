@@ -1,3 +1,3 @@
-declare const zipCount: number
+declare const zipCount: number;
 
-export default zipCount
+export default zipCount;

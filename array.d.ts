@@ -1,8 +1,8 @@
-import { Geolocation, ZIPCode } from '.'
+import {Geolocation, ZIPCode} from ".";
 
-export type ZIPCodeRecord = Geolocation & { zipCode: ZIPCode }
-export type ZIPCodeList = ZIPCodeRecord[]
+export type ZIPCodeRecord = Geolocation & {zipCode: ZIPCode};
+export type ZIPCodeList = ZIPCodeRecord[];
 
-declare const defaultExport: ZIPCodeList
+declare const defaultExport: ZIPCodeList;
 
-export default defaultExport
+export default defaultExport;

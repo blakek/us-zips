@@ -9,15 +9,15 @@ I needed a list of ZIP codes, and the [US Census Bureau had one][1].
 Example: get the nearest zip to a geolocation
 
 ```javascript
-const geolib = require('geolib')
-const usZips = require('us-zips')
+const geolib = require("geolib");
+const usZips = require("us-zips");
 
 const somewhere = {
-  lat: 33.1234,
-  lng: -88.4321
-}
+	lat: 33.1234,
+	lng: -88.4321,
+};
 
-geolib.findNearest(somewhere, usZips) // { distance: 12834, key: '39341' }
+geolib.findNearest(somewhere, usZips); // { distance: 12834, key: '39341' }
 ```
 
 :information_source: If you need the nearest ZIPs for a geolocation, see if
@@ -88,9 +88,9 @@ console.log(usZips.find(([key, value]) => key === '10001'))
 ### Map
 
 ```javascript
-const usZips = require('us-zips/map')
+const usZips = require("us-zips/map");
 
-console.log(usZips.get('90210'))
+console.log(usZips.get("90210"));
 // { latitude: 34.100517, longitude: -118.41463 }
 ```
 

@@ -1,34 +1,35 @@
 {
-  "name": "us-zips",
-  "version": "2022.09.1",
-  "description": "A list of US ZIP codes and their geolocations",
-  "main": "index.js",
-  "repository": {
-    "url": "https://github.com/blakek/us-zips.git",
-    "type": "git"
-  },
-  "author": "Blake Knight <oss.ideas@gmail.com> (https://blakek.me/)",
-  "contributors": [
-    "Blake Knight <oss.ideas@gmail.com> (https://blakek.me/)"
-  ],
-  "engines": {
-    "node": ">=6"
-  },
-  "keywords": [
-    "zip",
-    "zipcode",
-    "postal",
-    "code"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "import-zips": "import() { node scripts/import-zips.js \"$1\" && yarn make:array && yarn make:key-value; }; import",
-    "make:array": "node scripts/make-array.js",
-    "make:key-value": "node scripts/make-key-value.js",
-    "test": "ava"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "ava": "^4.3.1"
-  }
+	"name": "us-zips",
+	"version": "2022.09.1",
+	"description": "A list of US ZIP codes and their geolocations",
+	"main": "index.js",
+	"repository": {
+		"url": "https://github.com/blakek/us-zips.git",
+		"type": "git"
+	},
+	"author": "Blake Knight <oss.ideas@gmail.com> (https://blakek.me/)",
+	"contributors": [
+		"Blake Knight <oss.ideas@gmail.com> (https://blakek.me/)"
+	],
+	"engines": {
+		"node": ">=6"
+	},
+	"keywords": [
+		"zip",
+		"zipcode",
+		"postal",
+		"code"
+	],
+	"license": "MIT",
+	"scripts": {
+		"format": "npx prettier -w .",
+		"import-zips": "import() { node scripts/import-zips.js \"$1\" && yarn make:array && yarn make:key-value; }; import",
+		"make:array": "node scripts/make-array.js",
+		"make:key-value": "node scripts/make-key-value.js",
+		"test": "ava"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"ava": "^4.3.1"
+	}
 }

@@ -1,9 +1,9 @@
 export interface Geolocation {
-  latitude: number
-  longitude: number
+	latitude: number;
+	longitude: number;
 }
 
-export type ZIPCode = string
+export type ZIPCode = string;
 
-declare const defaultExport: import('./object').ZIPCodeList
-export default defaultExport
+declare const defaultExport: import("./object").ZIPCodeList;
+export default defaultExport;
