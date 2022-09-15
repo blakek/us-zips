@@ -1,14 +1,14 @@
-const fs = require('fs')
-const path = require('path')
-const usZips = require('..')
+const fs = require("fs");
+const path = require("path");
+const usZips = require("..");
 
-const outputFile = path.join(__dirname, '../key-value.js')
+const outputFile = path.join(__dirname, "../key-value.js");
 
-const outputStart = 'module.exports = [\n  '
-const outputEnd = '\n]\n'
+const outputStart = "module.exports = [\n  ";
+const outputEnd = "\n]\n";
 
 const outputBody = Object.keys(usZips)
-  .map(zipCode => JSON.stringify([zipCode, usZips[zipCode]]))
-  .join(',\n  ')
+	.map((zipCode) => JSON.stringify([zipCode, usZips[zipCode]]))
+	.join(",\n  ");
 
-fs.writeFileSync(outputFile, outputStart + outputBody + outputEnd, 'utf8')
+fs.writeFileSync(outputFile, outputStart + outputBody + outputEnd, "utf8");
