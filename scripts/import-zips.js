@@ -6,7 +6,7 @@ const args = process.argv.slice(2);
 
 if (args.length !== 1) {
 	console.error(
-		"Expected one argument, a path to a txt file from the Census Bureau"
+		"Expected one argument, a path to a txt file from the Census Bureau",
 	);
 	process.exit(1);
 }

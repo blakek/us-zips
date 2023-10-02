@@ -23,7 +23,7 @@
 	"license": "MIT",
 	"scripts": {
 		"format": "npx prettier -w .",
-		"import-zips": "import() { node scripts/import-zips.js \"$1\" && yarn make:array && yarn make:key-value; }; import",
+		"import-zips": "import() { node scripts/import-zips.js \"$1\" && yarn make:array && yarn make:key-value && yarn format; }; import",
 		"make:array": "node scripts/make-array.js",
 		"make:key-value": "node scripts/make-key-value.js",
 		"test": "ava"
